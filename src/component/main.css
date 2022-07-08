@@ -1,0 +1,82 @@
+.main {
+  overflow-x: hidden;
+}
+
+.main .head {
+  background-color: #3b2896;
+  color: whitesmoke;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.main .part {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main .part .sec2 {
+  padding-left: 5px;
+}
+
+.main .part .sec2 .padtop {
+  margin-top: 0%;
+  margin-bottom: 1px;
+}
+
+.main .part .sec2 .widpart {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+      grid-template-columns: 10% 90%;
+}
+
+.main .part .sec2 .btn {
+  background-color: black;
+  color: whitesmoke;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+}
+
+.main .part .sec2 .col {
+  margin-top: 10px;
+}
+
+.main .foot {
+  background-color: #3d3d3d;
+  color: whitesmoke;
+  font-size: smaller;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 2%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main .part {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .main .part .sec2 {
+    padding-left: 0px;
+  }
+  .main .part .sec2 .widpart {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

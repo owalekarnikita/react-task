@@ -1,0 +1,72 @@
+$pad : 10px;
+$col : whitesmoke;
+.main {
+    overflow-x: hidden;
+    .head {
+        background-color: rgb(59, 40, 150);
+        color: $col;
+        font-size: larger;
+        font-weight: bold;
+        padding: $pad;
+        text-align: center;
+        width: 100%;
+    }
+
+    .part {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding: $pad;
+        padding-left: 20px;
+        padding-right: 20px;
+        .sec2 {
+            padding-left: 5px;
+            .padtop {
+                margin-top: 0%;
+                margin-bottom: 1px;
+            }
+            .widpart {
+                display: grid;
+                grid-template-columns: 10% 90%;
+            }
+            .btn {
+                background-color: black;
+                color: $col;
+                padding: 8px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-style: none;
+            }
+            .col {
+                margin-top: 10px;
+            }
+        }    
+    }
+
+    .foot {
+        background-color: rgb(61, 61, 61);
+        color: $col;
+        font-size: smaller;
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        bottom: 2%;
+        width: 100%;
+    }
+}
+
+@media only screen and  (max-width: 1200px) {
+    .main {
+        .part {
+            display: grid;
+            grid-template-columns: 100%;
+            .sec2 {
+                padding-left: 0px;
+                .widpart {
+                    display: grid;
+                    grid-template-columns: 100%;
+                }
+            }
+        }
+        
+    }
+}
