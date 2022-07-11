@@ -1,21 +1,26 @@
-import React from 'react';
+import React, {useState } from 'react';
 import './color.css';
 
 const SelectionWidget = (props) => {
     const array = props.options;
-    console.log(array.length);
-
-    const colorHandler=() => {
-       let a = document.getElementsByClassName('red');
-            a.style.backgroundColor = 'black';
-            a.style.color ='white';
+    // console.log(array.length);
+  
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    
+    const colorHandler=(index) => {
+      // console.log(index);
+      setSelectedIndex(index);
+      console.log(selectedIndex);
+      // const ele = array[index];
+      // console.log(ele);
+    
     }
 
   return (
     <div className='.div'>
-       {array.map ((color,index)=> (
+       {array.map((color,index)=> (
         <div className='color' key={index}>
-            <span className='red' onClick={colorHandler}> {color} </span>
+            <span className={selectedIndex === index ? 'black' : 'red'} onClick={() => colorHandler(index)}> {color} </span>
         </div>
         ))}
     </div>

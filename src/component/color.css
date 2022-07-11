@@ -14,3 +14,11 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.black {
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
